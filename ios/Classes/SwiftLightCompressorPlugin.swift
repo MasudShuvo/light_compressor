@@ -56,11 +56,11 @@ public class SwiftLightCompressorPlugin: NSObject, FlutterPlugin, FlutterStreamH
                         
                         switch compressionResult {
                         case .onSuccess(let path):
-                            DispatchQueue.main.async {
-                                PHPhotoLibrary.shared().performChanges({
-                                    PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: path)
-                                })
-                            }
+                            // DispatchQueue.main.async {
+                            //     PHPhotoLibrary.shared().performChanges({
+                            //         PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: path)
+                            //     })
+                            // }
                             let response: [String: String] = ["onSuccess": path.path]
                             result(response.toJson)
                             

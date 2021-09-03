@@ -83,7 +83,7 @@ class LightCompressorPlugin :
                                 result,
                                 quality,
                                 isMinBitRateEnabled,
-                                keepOriginalResolution,
+                                keepOriginalResolution
                         )
                     } else {
                         compressVideo(
@@ -92,7 +92,7 @@ class LightCompressorPlugin :
                                 result,
                                 quality,
                                 isMinBitRateEnabled,
-                                keepOriginalResolution,
+                                keepOriginalResolution
                         )
                     }
                 } else {
@@ -102,7 +102,7 @@ class LightCompressorPlugin :
                             result,
                             quality,
                             isMinBitRateEnabled,
-                            keepOriginalResolution,
+                            keepOriginalResolution
                     )
                 }
             }
@@ -121,7 +121,7 @@ class LightCompressorPlugin :
             result: Result,
             quality: VideoQuality,
             isMinBitRateEnabled: Boolean,
-            keepOriginalResolution: Boolean,
+            keepOriginalResolution: Boolean
     ) {
         VideoCompressor.start(
                 path,
@@ -149,7 +149,7 @@ class LightCompressorPlugin :
                 },
                 quality,
                 isMinBitRateEnabled = isMinBitRateEnabled,
-                keepOriginalResolution = keepOriginalResolution,
+                keepOriginalResolution = keepOriginalResolution
         )
     }
 
